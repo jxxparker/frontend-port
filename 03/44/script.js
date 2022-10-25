@@ -4,7 +4,7 @@ const jihun = {
     birthYear: 1992,
     job: 'Programmer',
     friends: ['Jordan', 'Mike', 'Shaq'],
-    hasDrivers: true,
+    hasDrivers: false,
 
     //   calcAge: function (birthYear) {
     //     return 2022 - birthYear;
@@ -19,7 +19,7 @@ const jihun = {
     },
 
     getSummary: function() {
-        
+        return `${this.firstName} is a ${this.calcAge()} - years old ${jihun.job}, and he has ${this.hasDrivers ? 'a' : 'no'} drivers license.`
     }
 };
 
@@ -31,8 +31,7 @@ console.log(`${jihun.age} is my age`);
 
 // Challenge
 // Jihjun is 46 years old teacher. 
-
-
+console.log(jihun.getSummary());
 
 
 

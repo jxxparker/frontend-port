@@ -1,58 +1,30 @@
 'use strict';
+// Functions
 
-// console.log(me);
-// // console.log(job);
-// // console.log(year);
+function addDecl(a,b) {
+    return a + b;
+}
 
-// var me = 'Jihun';
-// let job = 'programer';
-// const year = 1992;
+const addExpr = function(a,b) {
+    return a + b;
+}
 
-// // Functions
-// console.log(addDecl(2, 3));
-// // console.log(addExpr(2, 3));
-// // console.log(addArrow(2, 3));
+const addArrow = (a,b) => a + b;
 
-// function addDecl(a,b) {
-//     return a + b;
-// }
-
-// const addExpr = function(a,b) {
-//     return a + b;
-// }
-
-// const addArrow = (a,b) => a + b;
+// console.log(addExpr(3, 4));
+// console.log(addArrow(2, 6));
+// console.log(addDecl(3, 3));
 
 
 // Example
-console.log(numProducts);
-if (!numProducts) deleteShoppingCart();
 
-var numProducts = 10;
+if(!numProds) deleteShopping(); //currently numprods is undefined
 
-function deleteShoppingCart() {
-    console.log('All products deleted!');
+var numProds = 10;
+
+function deleteShopping() {
+    console.log('All products deleted')
 }
-
-var x = 1;
-let y = 2;
-const z = 3;
-
-console.log(x === window.x);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,4 +1,4 @@
-let js = 'amazing';
+let js = 'amazings';
 if (js === 'amazing') alert('Javascript is Fun!');
 
 40 + 8 + 23 - 10;

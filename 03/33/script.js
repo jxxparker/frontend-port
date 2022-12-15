@@ -1,19 +1,19 @@
+'use strict';
+
 function logger() {
-  console.log('Names Jihun');
+  console.log('My name is Jihun');
 }
 
-logger(23);
-logger();
+// Calling the Function
+// logger();
 
-function fruitProcessor(apples, oranges) {
-  console.log(apples, oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+function fruitProcessor(fruit1, fruit2) {
+  const juice = `Juice with ${fruit1} and ${fruit2}`;
   return juice;
 }
 
-// const appleJuice = fruitProcessor(5, 4);
-// console.log(appleJuice);
-console.log(fruitProcessor(5,0));
+fruitProcessor('Banana', 'Grapes');
+fruitProcessor(5, 2);
 
-const appleOrangeJuice = fruitProcessor(2,4);
+const appleOrangeJuice = fruitProcessor('dragonfruit', 'sweetapples');
 console.log(appleOrangeJuice);

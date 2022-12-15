@@ -1,11 +1,7 @@
-'use strict';
+'use strict'; 
 
-let hasLicense = false;
-let passTest = true;
+let hasDriversLicense = false;
+const passTest = true;
 
-if (passTest) hasLicense = true;
-
-if (hasLicense) 
-    console.log('I can drive')
-    
-// const interface = 'Audio'; ##wont work because of 'use strict'
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log('I can drive');

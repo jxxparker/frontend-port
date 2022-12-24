@@ -1,37 +1,32 @@
+'use strict';
 
 const jihun = {
   firstName: 'Jihun',
   lastName: 'Park',
   age: 2022 - 1992,
-  job: 'Programmer',
-  friends: ['Jordan', 'Mike', 'Shaq'],
+  job: 'programmer',
+  friends: ['Jordan', 'Kobe', 'Steph'],
 };
 
-console.log(jihun);
-console.log(jihun.lastName);
-console.log(jihun['lastName']); // both works from above.
+// console.log(jihun);
+// console.log(jihun.lastName);
+// console.log(jihun['lastName']);
 
 const nameKey = 'Name';
 console.log(jihun['first' + nameKey]);
 console.log(jihun['last' + nameKey]);
 
-// ----
+const interestedIn = prompt('Wsup');
 
-// const answer = prompt('What do you want to know about Jihun?');
-
-// if (jihun[answer]) {
-//     console.log(jihun[answer]);
+// if (jihun[interestedIn]) {
+//   console.log(jihun[interestedIn])
 // } else {
-//     console.log('Wrong prompt request');
+//   console.log('what did you type')
 // }
 
 jihun.location = 'Korea';
 jihun['instagram'] = '@jihunypark';
 console.log(jihun);
 
-console.log(`${jihun.firstName} has ${jihun.friends.length} friends, and his best friend is ${jihun.friends[0]}`)
-
-
-
-
-
+// Challenge 3 
+console.log(`Jihun has ${jihun.friends.length} friends, and his best friend is called ${jihun.friends[0]}`)

@@ -1,19 +1,17 @@
+'use strict';
+
 const jihunArray = [
-    'Jihun',
-    'Park',
-    2022 - 1992,
-    'Programmer',
-    ['Jordan', 'Mike', 'Shaq']
+  'Jihun',
+  'Park',
+  2022 - 1992,
+  'programmer',
+  ['Jordan', 'Kobe', 'Steph'],
 ];
 
-// console.log(jihunArray);
-
 const jihun = {
-  first: 'Jihun',
-  last: 'Park',
+  firstName: 'Jihun',
+  lstName: 'Park',
   age: 2022 - 1992,
-  job: 'Programmer',
-  friends: ['Jordan', 'Mike', 'Shaq'],
-};
-
-console.log(jihun)
+  job: 'programmer',
+  friends: ['Jordan', 'Kobe', 'Steph'],
+}

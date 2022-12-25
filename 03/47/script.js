@@ -1,6 +1,6 @@
 // Looping arrays, breaking and continuing
 
-const jihunArray = [
+const jihun = [
     'Jihun',
     'Park',
     2022- 1992,
@@ -8,36 +8,35 @@ const jihunArray = [
     ['Jihun', 'Jordan', 'Mike'],
     true,
 ];
-
 const types = [];
-for (let i = 0; i < jihunArray.length; i++) {
-    console.log(jihunArray[i], typeof jihunArray[i]);
 
-    // types[i] = typeof jihunArray[i];
-    types.push(typeof jihunArray[i]);
-}
-// console.log(types);
-console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+for(let i = 0; i < jihun.length; i++) {
+    // Reading from array
+    console.log(jihun[i], typeof jihun[i]);
 
-const years = [1991, 2001, 2010, 2015, 2022];
+    // Filling types array
+    // types[i] = typeof jihun[i];
+    types.push(typeof jihun[i]);
+};
+
+console.log(types);
+
+const years = [1991, 1992, 1993, 1994, 1995];
 const ages = [];
-for (let i = 0; i < years.length; i++) {
+for(let i = 0; i < years.length; i++) {
     ages.push(2022 - years[i]);
 }
 console.log(ages);
 
+// Continue and Break
+console.log('========strings-=========')
+for(let i = 0; i < jihun.length; i++) {
+    if (typeof jihun[i] !== 'string') continue;
+    console.log(jihun[i], typeof jihun[i]);
+};
 
-// continue and break
-console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-for (let i = 0; i < jihunArray.length; i++) {
-    if (typeof jihunArray[i] !== 'string') continue;
-
-    console.log(jihunArray[i], typeof jihunArray[i]);
-}
-
-console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-for (let i = 0; i < jihunArray.length; i++) {
-  if (typeof jihunArray[i] !== 'string') break;
-
-  console.log(jihunArray[i], typeof jihunArray[i]);
-}
+console.log('========number-=========')
+for(let i = 0; i < jihun.length; i++) {
+    if (typeof jihun[i] === 'number') break;
+    console.log(jihun[i], typeof jihun[i]);
+};

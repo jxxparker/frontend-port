@@ -1,32 +1,35 @@
 'use strict';
 
-// const calcAge = function(birthYear) {
-//     console.log(2022 - birthYear);
-//     // console.log(this); // prints undefined
-// };
-// calcAge(1992);
+console.log(this);
 
-// const calcAgeArrow = birthYear => {
-//     console.log(2022 - birthYear);
-//     console.log(this); 
-// };
-// calcAgeArrow(1991);
+// ---
+const calcAge = function(birthYear) {
+  console.log(2022 - birthYear);
+  // console.log(this);
+};
+calcAge(1992);
 
-const jonas = {
-    year: 1991,
-    calcAge: function() {
-        console.log(this);
-        console.log(2022 - this.year);
-    }
+// ---
+const calcAgeArrow = birthYear => {
+  console.log(2022 - birthYear);
+  // console.log(this);
+};
+calcAgeArrow(1980);
+
+// ---
+const jihun = {
+  year: 1992,
+  calcAge: function() {
+    // console.log(this);
+    console.log(2022 - this.year);
+  }
 }
-jonas.calcAge();
+jihun.calcAge();
 
+// ---
 const matilda = {
-  year: 1997,
+  year: 2017,
 };
 
-matilda.calcAge = jonas.calcAge;
+matilda.calcAge = jihun.calcAge;
 matilda.calcAge();
-
-const f = jonas.calcAge;
-console.log(f);

@@ -1,6 +1,5 @@
 'use strict';
 
-
 // var firstName = 'Jordan';
 
 const jihun = {

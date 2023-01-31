@@ -3,16 +3,15 @@
 const greet = function(greeting) {
     return function(name) {
         console.log(`${greeting} ${name}`);
-    }
-}
+    };
+};
 
-// const greetHey = greet("Hey");
-// greetHey('Jihun');
-// greetHey('James');
+const greeterHey = greet('Hey');
+greeterHey('Jihun');
+greeterHey('James');
 
-greet('Hellos')('jihun');
+greet('Hello')('Jordan');
 
 // Challenge
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
-
-greetArr('Hi')('James');
+greetArr('Wsup')('kobe');

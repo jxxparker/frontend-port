@@ -9,12 +9,10 @@ const lufthansa = {
     book(flightNum, name) {
         console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`);
         this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+        this.bookings.push({ flight: `${this.iataCode}${flightNum}, name` });
     },
 };
-
-// lufthansa.book(239, 'James');
-// lufthansa.book(1567, 'Jordan');
-// console.log(lufthansa);
+const book = lufthansa.book;
 
 const eurowings = {
     airline: 'Eurowings',
@@ -22,23 +20,18 @@ const eurowings = {
     bookings: [],
 };
 
-const book = lufthansa.book;
-// book(23, 'Kelly Chung'); // THIS DOESN'T WORK!!!!!
-
-// This works now.
-// console.log(eurowings);
-book.call(eurowings, 23, 'Kelly Chung');
-book.call(lufthansa, 987, 'Jimmy Butler')
-
 const swiss = {
-    airline: 'swiss',
-    iataCode: 'LX',
-    bookings: [],
+  airline: 'Swiss flight',
+  iataCode: 'SW',
+  bookings: [],
 };
 
-book.call(swiss, '23', 'Jordan Mike');
+// Call Method
+lufthansa.book(239, 'Jihun Park');
+book.call(eurowings, 23, 'Sarah wills')
+book.call(lufthansa, 239, 'Jimmy Buttler');
+
 
 // Apply method
-const flightData = [567, 'Ja morant'];
+const flightData = [583, 'Geroge Cooper'];
 book.apply(swiss, flightData);
-book.call(swiss, ...flightData);

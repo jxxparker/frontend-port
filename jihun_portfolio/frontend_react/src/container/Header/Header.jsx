@@ -1,4 +1,5 @@
 import React from "react";
+import { motion }
 
 import './Header.scss';
 const Header = () => {
